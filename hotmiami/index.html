@@ -18,6 +18,7 @@
         }
         #message {
             font-size: 24px;
+            text-align: center;
         }
         #countdown {
             font-size: 36px;
@@ -32,12 +33,18 @@
             font-size: 18px;
             margin-top: 20px;
         }
+
+        @media screen and (max-width: 852px) {
+            #message {
+                font-size: 20px;
+            }
+        }
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proxima+Nova:400,700">
 </head>
 <body>
-    <div id="message">ДО ХОТЛАЙН МАЙАМИ ОСТАЛОСЬ:</div>
     <div id="countdown">00:00:00</div>
+    <div id="message">ДО ХОТЛАЙН МАЙАМИ ОСТАЛОСЬ:</div>
     <a id="presave-button" href="https://band.link/hotmiami" target="_blank">Пресейв</a>
 
     <script>
